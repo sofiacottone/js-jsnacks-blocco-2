@@ -3,8 +3,13 @@
 
 
 // chiedo due parole all'utente
+const userWordOne = prompt('Inserisci una parola');
+const userWordTwo = prompt('Inserisci una parola');
 
 // verifico quale delle due è più lunga
-
-// stampo prima la più corta
-
+if (userWordOne.length < userWordTwo.length) {
+    // stampo prima la più corta
+    console.log(userWordOne, userWordTwo);
+} else {
+    console.log(userWordTwo, userWordOne);
+}
